@@ -39,7 +39,7 @@ main() {
 
     echo -e "\n${FMT_YELLOW}(2). backup and copy .zshrc \n----------------------------------------------------------------${FMT_RESET}"
         [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
-        ln -s ./.zshrc ~/.zshrc
+        ln -s $PWD/.zshrc ~/.zshrc
     
     echo -e "\n${FMT_YELLOW}(3). change to zsh \n----------------------------------------------------------------${FMT_RESET}"
     if [[ $SHELL == *"zsh" ]]; then

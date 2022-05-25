@@ -9,7 +9,7 @@ fi
 HIST_STAMPS="yyyy-mm-dd"
 
 # 設定 Color, ls 會顏色
-# export CLICOLOR=1
+export CLICOLOR=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -34,18 +34,18 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # 載入外掛
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
-zinit light zsh-users/zsh-history-substring-search
-# zinit light marlonrichert/zsh-autocomplete # 強大，但在找歷史指令時，會把zsh-history-substring-search 的功能蓋掉
+zinit light marlonrichert/zsh-autocomplete # 強大，但在找歷史指令時，會把zsh-history-substring-search 的功能蓋掉
+# zinit light zsh-users/zsh-history-substring-search
 
 # 綁定 zsh-history-substring-search 上下鍵
-bindkey -M emacs '^[[A' history-substring-search-up
-bindkey -M emacs '^[[B' history-substring-search-down
+# bindkey -M emacs '^[[A' history-substring-search-up
+# bindkey -M emacs '^[[B' history-substring-search-down
 
 # 載入 OMZ 框架及部分外掛 (不知道用在那，先Mark 掉)
 # zinit snippet OMZ::lib/key-bindings.zsh
 # zinit snippet OMZ::lib/completion.zsh
 # zinit snippet OMZ::lib/clipboard.zsh
-# zinit snippet OMZ::lib/history.zsh
+zinit snippet OMZ::lib/history.zsh
 # zinit snippet OMZ::lib/theme-and-appearance.zsh
 # zinit snippet OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh
 # zinit snippet OMZ::plugins/sudo/sudo.plugin.zsh
@@ -58,7 +58,7 @@ zinit snippet OMZ::lib/git.zsh
 # public alias
 alias port='netstat tln '
 alias size="du --max-depth=1 -B M | sort -g"
-alias ll='ls -alh'
+alias l='ls -alh'
 alias grepn='grep -nrE ./'
 alias findn='find ./ -name'
 alias v.z='vim ~/.zshrc'
