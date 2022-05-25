@@ -38,8 +38,8 @@ main() {
     fi
 
     echo -e "\n${FMT_YELLOW}(2). backup and copy .zshrc \n----------------------------------------------------------------${FMT_RESET}"
-        [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
-        ln -s $PWD/.zshrc ~/.zshrc
+    [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
+    ln -s $PWD/.zshrc ~/.zshrc
     
     echo -e "\n${FMT_YELLOW}(3). change to zsh \n----------------------------------------------------------------${FMT_RESET}"
     if [[ $SHELL == *"zsh" ]]; then
@@ -49,9 +49,7 @@ main() {
         chsh -s /bin/zsh
     fi
 
-    echo "Please Run [ source ~/.zshrc ] to Enable."
- 
-    echo -e "\n${FMT_YELLOW}Congres, install finished.${FMT_RESET}"
+    echo -e "\n${FMT_YELLOW}Congres, install finished.\n${FMT_RED}[ please logout & login to enter zsh mode. ]${FMT_RESET}"
 }
 
 main "$@"
