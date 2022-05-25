@@ -69,6 +69,6 @@ alias tree="tree -alI 'node_modules|.git'"
 
 # private alias
 alias tt="sh ~/.ssh/tt.sh"
-alias ct="sh ~/.ssh/ct.sh"
+alias tc="sh ~/.ssh/tc.sh"
 alias ptt="ssh bbsu@ptt.cc"
 alias code="cd /Users/chingwei/Documents/project"
