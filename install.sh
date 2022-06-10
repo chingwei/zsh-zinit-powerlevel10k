@@ -41,7 +41,7 @@ main() {
     [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
     ln -s $PWD/.zshrc ~/.zshrc
     [ -f ~/.p10k.zsh ] && mv ~/.p10k.zsh ~/.p10k.zsh.bak
-    ln -s $PWD/.p10k.zsh ~/p10k.zsh
+    ln -s $PWD/.p10k.zsh ~/.p10k.zsh
 
     echo -e "\n${FMT_YELLOW}(3). change to zsh \n----------------------------------------------------------------${FMT_RESET}"
     if [[ $SHELL == *"zsh" ]]; then
