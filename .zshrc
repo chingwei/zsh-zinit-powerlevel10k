@@ -34,8 +34,8 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # 載入外掛
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
-zinit light marlonrichert/zsh-autocomplete # 強大，但在找歷史指令時，會把zsh-history-substring-search 的功能蓋掉
-# zinit light zsh-users/zsh-history-substring-search
+#zinit light marlonrichert/zsh-autocomplete # 強大，但在找歷史指令時，會把zsh-history-substring-search 的功能蓋掉
+zinit light zsh-users/zsh-history-substring-search
 
 # 綁定 zsh-history-substring-search 上下鍵
 # bindkey -M emacs '^[[A' history-substring-search-up
@@ -72,3 +72,5 @@ alias tt="sh ~/.ssh/tt.sh"
 alias tc="sh ~/.ssh/tc.sh"
 alias ptt="ssh bbsu@ptt.cc"
 alias code="cd ~/Documents/project"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
