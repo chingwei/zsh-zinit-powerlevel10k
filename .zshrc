@@ -38,8 +38,8 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-history-substring-search
 
 # 綁定 zsh-history-substring-search 上下鍵
-# bindkey -M emacs '^[[A' history-substring-search-up
-# bindkey -M emacs '^[[B' history-substring-search-down
+bindkey -M emacs '^[[A' history-substring-search-up
+bindkey -M emacs '^[[B' history-substring-search-down
 
 # 載入 OMZ 框架及部分外掛 (不知道用在那，先Mark 掉)
 # zinit snippet OMZ::lib/key-bindings.zsh
