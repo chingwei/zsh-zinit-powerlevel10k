@@ -71,6 +71,13 @@ alias tree="tree -alI 'node_modules|.git'"
 alias tt="sh ~/.ssh/tt.sh"
 alias tc="sh ~/.ssh/tc.sh"
 alias ptt="ssh bbsu@ptt.cc"
-alias code="cd ~/Documents/project"
+alias code="cd ~/Documents/projects"
+
+
+export SPOTIPY_CLIENT_ID='a51f63d00862425c8cd962b3d260f860'
+export SPOTIPY_CLIENT_SECRET='bfc881d0d6934f7e980d58fc3643ee38'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Created by `pipx` on 2025-05-06 01:44:57
+export PATH="$PATH:/home/chingwei/.local/bin"
